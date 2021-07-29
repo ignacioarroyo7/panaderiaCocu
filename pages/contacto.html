@@ -33,7 +33,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0 pe-5 me-5">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="../index.html"
+                <a class="nav-link" aria-current="page" href="../index.html"
                   >Inicio</a
                 >
               </li>
@@ -44,7 +44,7 @@
                 <a class="nav-link" href="producto.html">Producto</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="contacto.html">Contacto</a>
+                <a class="nav-link active" href="contacto.html">Contacto</a>
               </li>
             </ul>
           </div>
@@ -52,7 +52,41 @@
       </nav>
     </header>
     <main>
-      
+      <section class="container-fluid">
+        <h2 class="display-2">Consultas</h2>
+      </section>
+      <section class="container">
+        <article class="row">
+          <div class="col-sm-12 col-md-6">
+            <form>
+              <div class="mb-3 row">
+                <div class="col-sm-12 col-md-6">
+                  <label for="nombreFormContacto" class="form-label">
+                    Nombre:
+                  </label>
+                  <input type="text" class="form-control" id="nombreFormContacto" required>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                  <label for="apellidoFormContacto" class="form-label">
+                    Apellido:
+                  </label>
+                  <input type="text" class="form-control" id="apellidoFormContacto" required>
+                </div>
+              </div>
+  
+              <div class="mb-3">
+                <label for="nombreFormContacto" class="form-label">
+                  E-mail:
+                </label>
+                <input type="email" class="form-control" id="nombreFormContacto" required>
+              </div>
+            </form>
+          </div>
+          <div class="col-sm-12 col-md-6">
+            
+          </div>
+        </article>
+      </section>
     </main>
     <footer class="bg-dark text-light py-1">
       <section class="container-fluid">
@@ -96,6 +130,6 @@
         </article>
       </section>
     </footer>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
   </body>
 </html>
