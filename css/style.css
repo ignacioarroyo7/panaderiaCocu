@@ -1,0 +1,26 @@
+.navbar img{
+    width: 100px;
+}
+.logo-footer{
+    width: 150px;
+}
+
+.logo-insta{
+    width: 40px;
+    border-radius: 10px;
+}
+.logo-fb{
+    width: 40px;
+    border-radius: 10px;
+}
+.logo-wsp{
+    width: 40px;
+    border-radius: 10px;
+}
+
+@media all and (max-width: 576px){
+    .slider-responsive{
+        height: 250px;
+        object-fit: cover; /*conserva el centrado de la imagen, se corta pero se adapta al tamaño*/
+    }
+}

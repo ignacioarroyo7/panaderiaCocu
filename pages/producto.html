@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Panaderia Cocu</title>
+    <script
+      src="https://kit.fontawesome.com/012f3cd5dc.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand ms-5 ps-5" href="../index.html"
+            ><img
+              class="logo-nav"
+              src="../img/img/cocu_logo-450.png"
+              alt="logo panaderia cocu"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 pe-5 me-5">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="historia.html">Historia</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="producto.html">Producto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="container">
+      <section>
+        <h1 class="display-1 text-center my-5">Galeria de productos</h1>
+        <hr />
+      </section>
+      <section class="row my-5">
+        <article class="col-sm-12 col-md-4 col-lg-3 text-center mb-4">
+          <div class="card">
+            <a href="" data-bs-toggle="modal" data-bs-target="#p-pan">
+              <img
+                class="card-img-top"
+                src="../img/img/productos/pan.jpg"
+                alt=""
+              />
+            </a>
+            <div class="card-body">
+              <h6 class="card-tittle">
+                Nombre del producto <span class="badge bg-warning">NUEVO</span>
+              </h6>
+              <p>Descripción del producto</p>
+              <a
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#p-pan"
+              
+              >
+                +Ver más
+              </a>
+            </div>
+          </div>
+
+          <!--Modal de producto-->
+          <div
+            class="modal fade"
+            id="p-pan"
+            tabindex="-1"
+            aria-labelledby="p-pan-Modal-Label"
+            aria-hidden="true"
+          >
+            <!--Esto es para que cierre la ventana modal-->
+
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+            
+            <!--Esto es para que al hacer click en la imagen se amplie-->
+            <div class="modal-dialog modal-xl modal-dialog-centered">
+              <img
+                src="../img/img/productos/pan.jpg"
+                alt=""
+                class="container-fluid rounded"
+              />
+            </div>
+
+          </div>
+        </article>
+
+        <article class="col-sm-12 col-md-4 col-lg-3 text-center mb-4">
+          <div class="card">
+            <a href="" data-bs-toggle="modal" data-bs-target="#p-pan-de-uva">
+              <img
+                class="card-img-top"
+                src="../img/img/productos/Pan-de-uva-corte_00058_portfolio1.jpg"
+                alt=""
+              />
+            </a>
+            <div class="card-body">
+              <h6 class="card-tittle">
+                Nombre del producto <span class="badge bg-danger">AGOTADO</span>
+              </h6>
+              <p>Descripción del producto</p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#p-brioche"
+                disabled
+              >
+                +Añadir al <i class="fas fa-cart-plus"></i>
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="modal fade"
+            id="p-pan-de-uva"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+            <div class="modal-dialog modal-xl modal-dialog-centered">
+              <img
+                src="../img/img/productos/Pan-de-uva-corte_00058_portfolio1.jpg"
+                alt=""
+                class="container-fluid rounded"
+              />
+            </div>
+          </div>
+        </article>
+
+        <article class="col-sm-12 col-md-4 col-lg-3 text-center mb-4">
+          <div class="card">
+            <a href="" data-bs-toggle="modal" data-bs-target="#p-brioche">
+              <img
+                class="card-img-top"
+                src="../img/img/productos/Brioche-larga-oscura_00059_portfolio1.jpg"
+                alt=""
+              />
+            </a>
+            <div class="card-body">
+              <h6 class="card-tittle">
+                Nombre del producto
+                <span class="badge bg-success">30% OFF</span>
+              </h6>
+              <p class="card-text">Descripción del producto</p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#p-brioche"
+              >
+                +Ver en detalle
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="modal fade"
+            id="p-brioche"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+            <div class="modal-dialog modal-xl modal-dialog-centered">
+              <img
+                src="../img/img/productos/Brioche-larga-oscura_00059_portfolio1.jpg"
+                alt=""
+                class="container-fluid rounded"
+              />
+            </div>
+          </div>
+        </article>
+
+        <article class="col-sm-12 col-md-4 col-lg-3 text-center mb-4">
+          <div class="card">
+            <a href="" data-bs-toggle="modal" data-bs-target="#p-croissant">
+              <img
+                class="card-img-top"
+                src="../img/img/productos/Croissant_00018_portfolio1.jpg"
+                alt=""
+              />
+            </a>
+            <div class="card-body">
+              <h4 class="card-tittle">Nombre del producto</h4>
+              <p class="card-text">Descripción del producto</p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#p-croissant"
+              >
+                +Ampliar
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="modal fade"
+            id="p-croissant"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+            <div class="modal-dialog modal-xl modal-dialog-centered">
+              <img
+                src="../img/img/productos/Croissant_00018_portfolio1.jpg"
+                alt=""
+                class="container-fluid rounded"
+              />
+            </div>
+          </div>
+        </article>
+
+        <article class="col-sm-12 col-md-4 col-lg-3 text-center mb-4">
+          <div class="card">
+            <a href="" data-bs-toggle="modal" data-bs-target="#p-eclair">
+              <img
+                class="card-img-top"
+                src="../img/img/productos/Eclair_00118_portfolio1.jpg"
+                alt=""
+              />
+            </a>
+            <div class="card-body">
+              <h4 class="card-tittle">Nombre del producto</h4>
+              <p class="card-text">Descripción del producto</p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#p-eclair"
+              >
+                +Ver
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="modal fade"
+            id="p-eclair"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+            <div class="modal-dialog modal-xl modal-dialog-centered">
+              <img
+                src="../img/img/productos/Eclair_00118_portfolio1.jpg"
+                alt=""
+                class="container-fluid rounded"
+              />
+            </div>
+          </div>
+        </article>
+
+        <article class="col-sm-12 col-md-4 col-lg-3 text-center mb-4">
+          <div class="card">
+            <a href="" data-bs-toggle="modal" data-bs-target="#p-pan-de-miga">
+              <img
+                class="card-img-top"
+                src="../img/img/productos/Pan-de-miga_00195_portfolio1.jpg"
+                alt=""
+              />
+            </a>
+            <div class="card-body">
+              <h4 class="card-tittle">Nombre del producto</h4>
+              <p class="card-text">Descripción del producto</p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#p-pan-de-miga"
+              >
+                +Detalle
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="modal fade"
+            id="p-pan-de-miga"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+            <div class="modal-dialog modal-xl modal-dialog-centered">
+              <img
+                src="../img/img/productos/Pan-de-miga_00195_portfolio1.jpg"
+                alt=""
+                class="container-fluid rounded"
+              />
+            </div>
+          </div>
+        </article>
+
+        <article class="col-sm-12 col-md-4 col-lg-3 text-center mb-4">
+          <div class="card">
+            <a
+              href=""
+              data-bs-toggle="modal"
+              data-bs-target="#p-panes-de-campo-corte"
+            >
+              <img
+                class="card-img-top"
+                src="../img/img/productos/Panes-de-campo-corte_00162_portfolio1.jpg"
+                alt=""
+              />
+            </a>
+            <div class="card-body">
+              <h4 class="card-tittle">Nombre del producto</h4>
+              <p class="card-text">Descripción del producto</p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#p-panes-de-campo-corte"
+              >
+                +Ver en detalle
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="modal fade"
+            id="p-panes-de-campo-corte"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+            <div class="modal-dialog modal-xl modal-dialog-centered">
+              <img
+                src="../img/img/productos/Panes-de-campo-corte_00162_portfolio1.jpg"
+                alt=""
+                class="container-fluid rounded"
+              />
+            </div>
+          </div>
+        </article>
+
+        <article class="col-sm-12 col-md-4 col-lg-3 text-center mb-4">
+          <div class="card">
+            <a href="" data-bs-toggle="modal" data-bs-target="#p-pan2">
+              <img
+                class="card-img-top"
+                src="../img/img/productos/pan2.jpg"
+                alt=""
+              />
+            </a>
+            <div class="card-body">
+              <h4 class="card-tittle">Nombre del producto</h4>
+              <p class="card-text">Descripción del producto</p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#p-pan2"
+              >
+                +Ver más
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="modal fade"
+            id="p-pan2"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+            <div class="modal-dialog modal-xl modal-dialog-centered">
+              <img
+                src="../img/img/productos/pan2.jpg"
+                alt=""
+                class="container-fluid rounded"
+              />
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+    <footer class="bg-dark text-light py-1">
+      <section class="container-fluid">
+        <article class="row justify-content-around">
+          <div class="col-sm-12 col-md-12 col-lg-3 pt-3 text-center">
+            <a href="../index.html"
+              ><img
+                class="logo-footer"
+                src="../img/img/cocu_logo-450.png"
+                alt="logo panaderia cocu"
+            /></a>
+          </div>
+          <div
+            class="
+              col-sm-12 col-md-6 col-lg-6
+              p-4
+              pt-5
+              d-flex
+              justify-content-center
+            "
+          >
+            <div>
+              <h5 class="text-center">Horarios de atención:</h5>
+              <ul>
+                <li>Lunes a viernes: 09hs-18hs</li>
+                <li>Sabado, domingo y feriados 09hs-14hs</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-3 pt-5 text-center pb-3">
+            <h5>Seguinos en nuestras redes:</h5>
+            <div class="container pe-5">
+              <a
+                target="_blank"
+                class="ps-2"
+                href="https://www.instagram.com/ignacioarrf/"
+                ><i class="fab fa-instagram-square fa-3x text-light"></i
+              ></a>
+              <a target="_blank" class="ps-2" href="https://www.facebook.com/"
+                ><i class="fab fa-facebook-square fa-3x text-light"></i
+              ></a>
+              <a target="_blank" class="ps-2" href="#"
+                ><i class="fab fa-whatsapp-square fa-3x text-light"></i
+              ></a>
+            </div>
+          </div>
+        </article>
+      </section>
+    </footer>
+    <script src="../js/bootstrap.min.js"></script>
+  </body>
+</html>
