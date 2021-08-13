@@ -53,40 +53,46 @@
     </header>
     <main>
       <section class="container-fluid">
-        <h2 class="display-2">Consultas</h2>
+        <h2 class="display-2 text-center">Consultas</h2>
       </section>
-      <section class="container">
-        <article class="row">
-          <div class="col-sm-12 col-md-6">
-            <form>
-              <div class="mb-3 row">
-                <div class="col-sm-12 col-md-6">
-                  <label for="nombreFormContacto" class="form-label">
-                    Nombre:
-                  </label>
-                  <input type="text" class="form-control" id="nombreFormContacto" required>
-                </div>
-                <div class="col-sm-12 col-md-6">
-                  <label for="apellidoFormContacto" class="form-label">
-                    Apellido:
-                  </label>
-                  <input type="text" class="form-control" id="apellidoFormContacto" required>
-                </div>
-              </div>
-  
-              <div class="mb-3">
-                <label for="nombreFormContacto" class="form-label">
-                  E-mail:
-                </label>
-                <input type="email" class="form-control" id="nombreFormContacto" required>
-              </div>
-            </form>
-          </div>
-          <div class="col-sm-12 col-md-6">
-            
-          </div>
-        </article>
-      </section>
+      <section class="container my-5 text-dark">
+        <div class="row justify-content-center">
+            <div class="col-sm-12 col-md-6 my-3">
+                <form class="row g-3">
+                    <div class="col-sm-12 col-md-6">
+                        <label for="inputNombre" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="inputNombre" maxlength="50">
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                      <label for="inputMail" class="form-label">Email</label>
+                      <input type="email" class="form-control" id="inputMail" maxlength="50">
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <label for="inputAsunto" class="form-label">Asunto</label>
+                        <input type="text" class="form-control" id="inputAsunto" maxlength="50">
+                    </div>
+                    <div class="col-sm-12">
+                        <label for="textArea"></label>
+                        <textarea class="form-control" placeholder="En que puedo ayudarte?" id="textArea" style="height: 100px" maxlength="800">
+                        </textarea>
+                      </div>
+                    <div class="col-sm-12 d-flex justify-content-end">
+                      <button type="submit" class="btn btn-outline-secondary">Enviar mensaje</button>
+                    </div>
+                  </form>
+            </div>
+        </div>
+        <section class="my-5 text-center">
+            <h4 class="display-6 text-muted">Seamos sociales</h4>
+            <p class="lead text-muted">Seguinos en nuestro perfil de Instagram y Facebook</p>
+            <div class="row">
+                <article class="col-sm-12">
+                    <a href="#" ><i class="fab fa-instagram fa-3x text-secondary me-4"></i></a>
+                    <a href="#"><i class="fab fa-facebook fa-3x text-secondary me-4"></i></a>    
+                </article>
+            </div>
+        </section>
+    </section>
     </main>
     <footer class="bg-dark text-light py-1">
       <section class="container-fluid">
